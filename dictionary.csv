@@ -1,12 +1,12 @@
 Name,Description (Semantic Meaning),Data Type,Units,Possible Values / Categories,Potential Data Quality Issues
-Hours_Studied,Number of hours the student studied, Numerical, Hours, >= 0, Possible outliers or unrealistic values
-Attendance,Attendance percentage of the student, Numerical, Percentage (%), 0 to 100, Values outside range or inconsistent decimals
-Parental_Involvement,Level of parental involvement in education, Categorical, -, Low / Medium / High, Inconsistent labeling or typos
-Access_to_Resources,Level of access to learning resources, Categorical, -, Low / Medium / High, Subjective categorization
-Extracurricular_Activities,Participation in extracurricular activities, Categorical, -, Yes / No, Encoding required for modeling
-Sleep_Hours,Average daily sleep hours, Numerical, Hours, 0 to 24, Outliers or unrealistic values
-Previous_Scores,Student's previous academic scores, Numerical, Score, 0 to 100, Outliers or inconsistent scaling
-Motivation_Level,Level of student motivation, Categorical, -, Low / Medium / High, Subjective and ordinal variable
-Internet_Access,Whether the student has internet access, Categorical, -, Yes / No, Needs encoding
-Tutoring_Sessions,Number of tutoring sessions attended, Numerical, Count, >= 0, Skewed distribution (many zeros)
-Final_Exam_Score,Final exam score achieved by the student, Numerical, Score, 0 to 100, Target variable, possible outliers
+Hours_Studied,Number of hours the student studied,Numerical,Hours,">= 0",Possible outliers or unrealistic values
+Attendance,Attendance percentage of the student,Numerical,Percentage (%),"0 to 100",Values outside range or inconsistent decimals
+Parental_Involvement,Level of parental involvement in education,Categorical,-,"Low / Medium / High",Inconsistent labeling or typos
+Access_to_Resources,Level of access to learning resources,Categorical,-,"Low / Medium / High",Subjective categorization
+Extracurricular_Activities,Participation in extracurricular activities,Categorical,-,"Yes / No",Encoding required for modeling
+Sleep_Hours,Average daily sleep hours,Numerical,Hours,"0 to 24",Outliers or unrealistic values
+Previous_Scores,Student's previous academic scores,Numerical,Score,"0 to 100",Outliers or inconsistent scaling
+Motivation_Level,Level of student motivation,Categorical,-,"Low / Medium / High",Subjective and ordinal variable
+Internet_Access,Whether the student has internet access,Categorical,-,"Yes / No",Needs encoding
+Tutoring_Sessions,Number of tutoring sessions attended,Numerical,Count,">= 0",Skewed distribution (many zeros)
+Final_Exam_Score,Final exam score achieved by the student,Numerical,Score,"0 to 100","Target variable, possible outliers"
