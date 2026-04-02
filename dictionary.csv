@@ -1,13 +1,12 @@
 Name,Description (Semantic Meaning),Data Type,Units,Possible Values / Categories,Potential Data Quality Issues
-PassengerId,Unique identifier for each passenger,Numerical,-,Positive integers,Should be unique; possible duplicates if dataset is merged
-Survived,Indicates if the passenger survived,Numerical (binary),-,0 = No; 1 = Yes,Class imbalance (more non-survivors)
-Pclass,Passenger class (socio-economic status),Numerical (categorical),-,1 = 1st; 2 = 2nd; 3 = 3rd,Ordinal meaning may be misinterpreted as continuous
-Name,Full name of the passenger,Text,-,Free text,Long strings; titles included (Mr Mrs etc); needs parsing
-Sex,Gender of the passenger,Categorical,-,male; female,No major issues but must be encoded
-Age,Age of the passenger,Numerical,Years,> 0,Missing values; possible outliers
-SibSp,Number of siblings/spouses aboard,Numerical,Count,>= 0,Skewed distribution (many zeros)
-Parch,Number of parents/children aboard,Numerical,Count,>= 0,Skewed distribution
-Ticket,Ticket number,Text,-,Alphanumeric,Inconsistent formats; duplicates possible
-Fare,Ticket fare paid,Numerical,Currency (£),>= 0,Outliers; skewed distribution
-Cabin,Cabin number,Text,-,Alphanumeric (e.g. C85),High percentage of missing values
-Embarked,Port where passenger boarded,Categorical,-,C = Cherbourg; Q = Queenstown; S = Southampton,Missing values; needs encoding
+Hours_Studied,Number of hours the student studied, Numerical, Hours, >= 0, Possible outliers or unrealistic values
+Attendance,Attendance percentage of the student, Numerical, Percentage (%), 0 to 100, Values outside range or inconsistent decimals
+Parental_Involvement,Level of parental involvement in education, Categorical, -, Low / Medium / High, Inconsistent labeling or typos
+Access_to_Resources,Level of access to learning resources, Categorical, -, Low / Medium / High, Subjective categorization
+Extracurricular_Activities,Participation in extracurricular activities, Categorical, -, Yes / No, Encoding required for modeling
+Sleep_Hours,Average daily sleep hours, Numerical, Hours, 0 to 24, Outliers or unrealistic values
+Previous_Scores,Student's previous academic scores, Numerical, Score, 0 to 100, Outliers or inconsistent scaling
+Motivation_Level,Level of student motivation, Categorical, -, Low / Medium / High, Subjective and ordinal variable
+Internet_Access,Whether the student has internet access, Categorical, -, Yes / No, Needs encoding
+Tutoring_Sessions,Number of tutoring sessions attended, Numerical, Count, >= 0, Skewed distribution (many zeros)
+Final_Exam_Score,Final exam score achieved by the student, Numerical, Score, 0 to 100, Target variable, possible outliers
